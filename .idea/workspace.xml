@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b13f8ccd-818d-4d2e-a680-214593580794" name="Changes" comment="Added example exercise and improved instructions.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b13f8ccd-818d-4d2e-a680-214593580794" name="Changes" comment="Initial Commit w/two exercises still not completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CollectionExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CollectionExercises.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
@@ -52,8 +51,10 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.CollectionExerciseTests.executor": "Run",
+    "JUnit.CollectionExerciseTests.testLookupAppleColor.executor": "Run",
     "JUnit.CollectionExerciseTests.testMakeFruitList.executor": "Run",
     "JUnit.CollectionExerciseTests.testMakeFruitMap.executor": "Run",
+    "JUnit.CollectionExerciseTests.testMakeFruitSet.executor": "Run",
     "JUnit.CollectionExerciseTests.testMakeFruitStringArray.executor": "Run",
     "JUnit.CollectionExerciseTests.testMakeFruitStringArrayWithSize.executor": "Run",
     "JUnit.CollectionExerciseTests.testMakeListOfThreeFruits.executor": "Run",
@@ -73,7 +74,23 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CollectionExerciseTests.testMakeFruitSet">
+    <configuration name="CollectionExerciseTests.testLookupAppleColor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="software-dev-course-java-basics-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CollectionExerciseTests" />
+      <option name="METHOD_NAME" value="testLookupAppleColor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CollectionExerciseTests.testMakeFruitList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="software-dev-course-java-basics-4" />
       <extension name="coverage">
@@ -106,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionExerciseTests.testMakeFruitStringArrayWithSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionExerciseTests.testMakeFruitSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="software-dev-course-java-basics-4" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +133,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.CollectionExerciseTests" />
-      <option name="METHOD_NAME" value="testMakeFruitStringArrayWithSize" />
+      <option name="METHOD_NAME" value="testMakeFruitSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,29 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionExerciseTests.testMakeTopThreeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="software-dev-course-java-basics-4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CollectionExerciseTests" />
-      <option name="METHOD_NAME" value="testMakeTopThreeArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionExerciseTests.testMakeFruitSet" />
+        <item itemvalue="JUnit.CollectionExerciseTests.testLookupAppleColor" />
         <item itemvalue="JUnit.CollectionExerciseTests.testMakeListOfThreeFruits" />
         <item itemvalue="JUnit.CollectionExerciseTests.testMakeFruitMap" />
         <item itemvalue="JUnit.CollectionExerciseTests.testMakeFruitList" />
-        <item itemvalue="JUnit.CollectionExerciseTests.testMakeTopThreeArray" />
-        <item itemvalue="JUnit.CollectionExerciseTests.testMakeFruitStringArrayWithSize" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +218,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added collection choice exercises." />
     <MESSAGE value="Added example exercise and improved instructions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added example exercise and improved instructions." />
+    <MESSAGE value="Initial Commit w/two exercises still not completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit w/two exercises still not completed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/CollectionExerciseTests.java</url>
+          <line>78</line>
+          <placement>INTER_LINE</placement>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

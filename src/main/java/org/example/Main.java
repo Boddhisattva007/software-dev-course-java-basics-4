@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,7 +29,8 @@ public class Main {
         for (String fruit : fruitsFour) {
             System.out.println(fruit);
         }
-//        System.out.println(fruitsThree);
+
+        // System.out.println(fruitsThree);
 
         // ---------- Collection Exercise 5 ---------- //
         String[] threeFruits = collectionExercises.makeFruitStringArray();
@@ -62,7 +60,19 @@ public class Main {
         }
 
         // ---------- Collection Exercise 7 ---------- //
+        HashMap<String, String> fruitColorApple = collectionExercises.makeFruitMap();
+        String appleColor = collectionExercises.lookupAppleColor(fruitColorApple);
+        System.out.println("");
+        System.out.println("Collection Exercise 7:");
+        System.out.println("----------------------");
+        System.out.println(appleColor);
 
+        // ---------- Collection Exercise 8 ---------- //
+        HashSet<String> fruitSet = collectionExercises.makeFruitSet("apple", "banana", "cherry");
+        System.out.println("");
+        System.out.println("Collection Exercise 8:");
+        System.out.println("----------------------");
+        System.out.println(fruitSet);
 
 
 //        StudentManager studentManager = new StudentManager();

@@ -97,12 +97,22 @@ public class CollectionExercises {
     public String lookupAppleColor(HashMap<String, String> fruitMap) {
         // Return the value associated with the key "apple" in the given map, using the get method
         // Replace the line below with your implementation
-        return null;
+
+        String appleColor = fruitMap.get("apple");
+
+        return appleColor;
     }
 
     public HashSet<String> makeFruitSet(String fruit1, String fruit2, String fruit3) {
         // Create and return a HashSet of strings with the given values
         // Replace the line below with your implementation
-        return null;
+
+        HashSet<String> fruitSet = new HashSet<String>();
+
+        fruitSet.add(fruit1);
+        fruitSet.add(fruit2);
+        fruitSet.add(fruit3);
+
+        return fruitSet;
     }
 }
